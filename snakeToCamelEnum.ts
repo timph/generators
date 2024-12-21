@@ -10,7 +10,7 @@ interface User {
     last_name: string;
     user_id: number;
     user_status: UserStatus;
-    legal_residency: boolean;
+    legal_residency_us_residence: boolean;
     profile_details?: {
         street_address: string;
         zip_code: string;
@@ -61,7 +61,7 @@ function convertKeysToCamelCase<T>(obj: T): any {
     last_name: "Doe",
     user_id: 123,
     user_status: UserStatus.ACTIVE,
-    legal_residency: true,
+    legal_residency_us_residence: true,
     profile_details: {
       street_address: "123 Main St",
       zip_code: "90210",
@@ -74,7 +74,7 @@ function convertKeysToCamelCase<T>(obj: T): any {
     last_name: "Doe",
     user_id: 3425,
     user_status: UserStatus.PENDING_APPROVAL,
-    legal_residency: false,
+    legal_residency_us_residence: false,
     profile_details: {
       street_address: "34323 Main St",
       zip_code: "78745",
